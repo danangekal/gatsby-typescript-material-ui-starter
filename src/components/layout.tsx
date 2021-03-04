@@ -5,17 +5,26 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 import { ReactElement, ReactNode } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 import PropTypes from 'prop-types';
+import {
+  makeStyles, CssBaseline, Box, Typography,
+} from '@material-ui/core';
 
 import Header from './header';
-import './layout.css';
 
 interface LayoutProps {
   children: ReactNode;
 }
 
+const useStyles = makeStyles({
+  footer: {
+    marginTop: '2rem',
+  },
+});
+
 function Layout({ children }: LayoutProps): ReactElement {
+  const classes = useStyles();
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -27,30 +36,30 @@ function Layout({ children }: LayoutProps): ReactElement {
   `);
 
   return (
-    <>
+    <Box bgcolor="background.paper">
+      <CssBaseline />
       <Header siteTitle={data.site.siteMetadata?.title || 'Title'} />
-      <div
-        style={{
-          margin: '0 auto',
-          maxWidth: 960,
-          padding: '0 1.0875rem 1.45rem',
-        }}
+      <Box
+        maxWidth="960px"
+        marginX="auto"
+        marginY="0"
+        paddingTop="0"
+        paddingBottom="1.45rem"
+        paddingX="1.0875rem"
       >
         <main>{children}</main>
-        <footer
-          style={{
-            marginTop: '2rem',
-          }}
-        >
-          ©
-          {' '}
-          {new Date().getFullYear()}
-          , Built with
-          {' '}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+        <footer className={classes.footer}>
+          <Typography variant="body2">
+            ©
+            {' '}
+            {new Date().getFullYear()}
+            , Built with
+            {' '}
+            <Link to="https://www.gatsbyjs.com">Gatsby</Link>
+          </Typography>
         </footer>
-      </div>
-    </>
+      </Box>
+    </Box>
   );
 }
 

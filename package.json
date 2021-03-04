@@ -1,22 +1,24 @@
 {
-  "name": "gatsby-typescript-default-starter",
-  "version": "1.0.6",
+  "name": "gatsby-typescript-material-ui-starter",
+  "version": "0.1.0",
   "description": "The default stater gatsby starter with typescript & latest package",
   "author": "Danang Eko Alfianto <github.com/danangekal>",
-  "homepage": "https://github.com/danangekal/gatsby-typescript-default-starter#readme",
+  "homepage": "https://github.com/danangekal/gatsby-typescript-material-ui-starter#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/danangekal/gatsby-typescript-default-starter.git"
+    "url": "git+https://github.com/danangekal/gatsby-typescript-material-ui-starter.git"
   },
   "bugs": {
-    "url": "https://github.com/danangekal/gatsby-typescript-default-starter/issues"
+    "url": "https://github.com/danangekal/gatsby-typescript-material-ui-starter/issues"
   },
   "license": "MIT",
   "keywords": [
     "gatsby",
     "reactjs",
     "typescript",
+    "material-ui",
     "pwa",
+    "seo",
     "eslint",
     "husky",
     "prettier",
@@ -35,6 +37,8 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 0"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
     "gatsby": "^3.0.0",
     "gatsby-plugin-gatsby-cloud": "^2.0.0",
     "gatsby-plugin-image": "^1.0.0",
