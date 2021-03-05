@@ -1,11 +1,17 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+    <img alt="Gatsby" src="./src/images/gatsby-icon.png" width="60" />
+  </a>
+  <a href="https://www.typescriptlang.org">
+    <img alt="Typescript" src="./src/images/typescript-icon.png" width="60" />
+  </a>
+  <a href="https://material-ui.com">
+    <img alt="Material UI" src="./src/images/material-ui-icon.png" width="60" />
   </a>
 </p>
 <h1 align="center">
-  Gatsby's typescript default starter
+  Gatsby's typescript material ui starter
 </h1>
 
 This starter is based on [gatsby-starter-default](https://github.com/gatsbyjs/gatsby-starter-default). Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.

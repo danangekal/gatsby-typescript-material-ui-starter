@@ -26,44 +26,60 @@ function IndexPage(): ReactElement {
   return (
     <Layout>
       <SEO title="Home" />
-      <Typography variant="h3" component="h3" className={classes.title}>Hi people</Typography>
-      <Typography variant="body1" component="p" className={classes.paragraph}>Welcome to your new Gatsby site with Typescript & Material UI.</Typography>
-      <Typography variant="body1" component="p" className={classes.paragraph}>Now go build something great.</Typography>
-      <Box display="flex" flexWrap="wrap" justifyContent="center" alignItems="center">
+      <Typography variant="h3" component="h3" className={classes.title}>
+        Hi people
+      </Typography>
+      <Typography variant="body1" component="p" className={classes.paragraph}>
+        Welcome to your new Gatsby site with Typescript & Material UI.
+      </Typography>
+      <Typography variant="body1" component="p" className={classes.paragraph}>
+        Now go build something great.
+      </Typography>
+      <Box
+        display="flex"
+        flexWrap="wrap"
+        justifyContent="center"
+        alignItems="center"
+      >
         <StaticImage
           src="../images/gatsby-astronaut.png"
           width={300}
-          quality={95}
+          quality={100}
           formats={['auto', 'webp', 'avif']}
           alt="A Gatsby astronaut"
           className={classes.image}
         />
-      </Box>
-      <Box display="flex" flexWrap="wrap" justifyContent="center" alignItems="center">
-        <StaticImage
-          src="../images/gatsby-icon.png"
-          width={200}
-          quality={95}
-          formats={['auto', 'webp', 'avif']}
-          alt="A Gatsby astronaut"
-          className={classes.image}
-        />
-        <StaticImage
-          src="../images/typescript-icon.png"
-          width={200}
-          quality={95}
-          formats={['auto', 'webp', 'avif']}
-          alt="A Typescript Icon"
-          className={classes.image}
-        />
-        <StaticImage
-          src="../images/material-ui-icon.png"
-          width={200}
-          quality={95}
-          formats={['auto', 'webp', 'avif']}
-          alt="A Material UI Icon"
-          className={classes.image}
-        />
+        <Box
+          display="flex"
+          flexWrap="wrap"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <StaticImage
+            src="../images/gatsby-icon.png"
+            width={80}
+            quality={100}
+            formats={['auto', 'webp', 'avif']}
+            alt="A Gatsby icon"
+            className={classes.image}
+          />
+          <StaticImage
+            src="../images/typescript-icon.png"
+            width={80}
+            quality={100}
+            formats={['auto', 'webp', 'avif']}
+            alt="A Typescript icon"
+            className={classes.image}
+          />
+          <StaticImage
+            src="../images/material-ui-icon.png"
+            width={80}
+            quality={100}
+            formats={['auto', 'webp', 'avif']}
+            alt="A Material UI icon"
+            className={classes.image}
+          />
+        </Box>
       </Box>
       <Typography variant="body1" component="p" className={classes.paragraph}>
         <Link to="/page-2/">Go to page 2</Link>

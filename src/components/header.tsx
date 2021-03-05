@@ -28,10 +28,7 @@ const useStyles = makeStyles({
 function Header({ siteTitle }: HeaderProps): ReactElement {
   const classes = useStyles();
   return (
-    <Container
-      className={classes.container}
-      maxWidth="xl"
-    >
+    <Container className={classes.container} maxWidth="xl">
       <Box
         maxWidth="960px"
         paddingX="1.0875rem"
@@ -40,10 +37,7 @@ function Header({ siteTitle }: HeaderProps): ReactElement {
         marginY="0"
       >
         <Typography variant="h3" component="h3" className={classes.title}>
-          <Link
-            to="/"
-            className={classes.link}
-          >
+          <Link to="/" className={classes.link}>
             {siteTitle}
           </Link>
         </Typography>

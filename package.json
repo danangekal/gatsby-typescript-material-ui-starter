@@ -1,7 +1,7 @@
 {
   "name": "gatsby-typescript-material-ui-starter",
-  "version": "0.1.0",
-  "description": "The default stater gatsby starter with typescript & latest package",
+  "version": "0.0.0",
+  "description": "The default stater gatsby starter with typescript + material ui & latest package",
   "author": "Danang Eko Alfianto <github.com/danangekal>",
   "homepage": "https://github.com/danangekal/gatsby-typescript-material-ui-starter#readme",
   "repository": {
@@ -17,12 +17,12 @@
     "reactjs",
     "typescript",
     "material-ui",
-    "pwa",
-    "seo",
     "eslint",
     "husky",
     "prettier",
-    "lint-staged"
+    "lint-staged",
+    "pwa",
+    "seo"
   ],
   "scripts": {
     "build": "gatsby build",

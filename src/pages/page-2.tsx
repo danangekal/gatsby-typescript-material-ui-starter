@@ -22,8 +22,12 @@ function SecondPage(): ReactElement {
   return (
     <Layout>
       <SEO title="Page Two" />
-      <Typography variant="h3" component="h3" className={classes.title}>Hi from the second page</Typography>
-      <Typography variant="body1" component="p" className={classes.paragraph}>Welcome to page 2</Typography>
+      <Typography variant="h3" component="h3" className={classes.title}>
+        Hi from the second page
+      </Typography>
+      <Typography variant="body1" component="p" className={classes.paragraph}>
+        Welcome to page 2
+      </Typography>
       <Typography variant="body1" component="p" className={classes.paragraph}>
         <Link to="/">Go back to the homepage</Link>
       </Typography>
