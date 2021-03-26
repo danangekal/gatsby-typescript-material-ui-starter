@@ -37,7 +37,7 @@ function Header({ siteTitle }: HeaderProps): ReactElement {
         marginY="0"
       >
         <Typography variant="h3" component="h3" className={classes.title}>
-          <Link to="/" className={classes.link}>
+          <Link className={classes.link} to="/">
             {siteTitle}
           </Link>
         </Typography>

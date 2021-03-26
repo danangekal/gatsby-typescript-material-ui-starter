@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 import { ReactElement, ReactNode } from 'react';
-import { useStaticQuery, graphql, Link } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import {
   makeStyles, CssBaseline, Box, Typography,
@@ -55,7 +55,7 @@ function Layout({ children }: LayoutProps): ReactElement {
             {new Date().getFullYear()}
             , Built with
             {' '}
-            <Link to="https://www.gatsbyjs.com">Gatsby</Link>
+            <a href="https://www.gatsbyjs.com">Gatsby</a>
           </Typography>
         </footer>
       </Box>
